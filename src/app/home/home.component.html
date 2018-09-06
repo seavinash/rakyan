@@ -1,0 +1,118 @@
+<div class="row">
+    <div class="col span_12">
+        <div class="main_banner_top">
+            <img class="main_banner" *ngIf="dataList.banner" [src]="dataList.banner">
+            <div class="only_r_logo">
+                <img *ngIf="dataList.smallLogo" [src]="smallLogo">
+            </div>
+        </div>
+        <div class="exceptional_jewels">
+            <h1>
+              <span class="family_legacy">{{ bannerTopText }}</span>
+              <span class="gold_color">{{ bannerBottomText }}</span>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="about_us_section about_us">
+  <div class="container">
+      <div class="row">
+          <div class="col span_6 special_margin">
+              <div class="legacy_img"> <span><img class="image_full_size" *ngIf="dataList.image_about_us" [src]="dataList.image_about_us"> </span>
+               </div>
+          </div>
+
+          <div class="col span_6 margin_right">
+              <div class="we_believe_in"> <h1> <span> {{ dataList.title_about_us }} </span> </h1>
+                  <h3 [innerHTML]="dataList.tagline_about_us"> </h3>
+                  <div [innerHTML]="dataList.description_about_us"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="section_our_tradition">
+  <div class="container">
+      <div class="row">
+          <div class="col span_12">
+              <div class="our_tradition_part"> <h1> OUR TRADITION </h1> </div>
+          </div>
+      </div>
+
+      <div class="our_tradition_part_part">
+          <div class="row">
+              <div class="col span_6">
+                  <div class="our_tradition_legacy">
+                      <span><img class="image_full_size" *ngIf="dataList.image_legacy" [src]="dataList.image_legacy"></span>
+                      <div class="our_tradition_legacy_read_more">
+                          <h3> {{ dataList.title_legacy }} </h3>
+                          <p [innerHTML]="dataList.description_legacy"></p>
+                          <p> <a [routerLink]="dataList.url_legacy"> Read More </a> </p> </div>
+                  </div>
+              </div>
+
+                <div class="col span_6">
+                      <div class="our_tradition_values">
+                          <span> <img class="image_full_size" *ngIf="dataList.image_values" [src]="dataList.image_values">  </span>
+                      <div class="our_tradition_value">
+                          <h3> {{ dataList.title_values }} </h3>
+                      </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="values_section values_bespoke_margin">
+  <div class="container">
+      <div class="row">
+          <div class="col span_6 margin_right">
+              <div class="we_believe_in"> <h1> <span> {{ dataList.title_bespoke }} </span> </h1>
+                  <h3 [innerHTML]="dataList.tagline_bespoke"></h3>
+                  <div [innerHTML]="dataList.description_bespoke"></div>
+              </div>
+          </div>
+
+          <div class="col span_6 special_margin">
+              <div class="legacy_img">
+                  <span> <img class="image_full_size" *ngIf="dataList.image_bespoke" [src]="dataList.image_bespoke"> </span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="section_creation">
+  <div class="container">
+      <div class="row">
+          <div class="col span_12">
+              <div class="our_tradition_part"> <h1> CREATION </h1> </div>
+          </div>
+      </div>
+
+      <div class="our_tradition_part_part">
+          <div class="row">
+              <div class="col span_6">
+                  <div class="creation_image"> <span><img class="image_full_size" *ngIf="dataList.image_exceptional_jewels" [src]="dataList.image_exceptional_jewels"></span>
+                      <div class="exceptional_jewels_creation">
+                          <h5> {{ dataList.title_exceptional_jewels }} </h5>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col span_6">
+                  <div class="creation_img">
+                      <span><img class="image_full_size" *ngIf="dataList.image_treasure_from_the_roots" [src]="dataList.image_treasure_from_the_roots"></span>
+
+                      <div class="creation_img_read_more"> <h3> {{ dataList.title_treasure_from_the_roots }} </h3>
+                         <div [innerHTML]="dataList.description_treasure_from_the_roots"></div>
+                            <p> <a [routerLink]="dataList.url_treasure_from_the_roots"> Explore </a> </p> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

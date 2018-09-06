@@ -1,0 +1,1401 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family:'Bodoni Book';
+  src: url('assets/font/Bodoni-Book.eot');
+  src: url('assets/font/Bodoni-Book.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/Bodoni-Book.woff2') format('woff2'),
+  url('assets/font/Bodoni-Book.woff') format('woff'),
+  url('assets/font/Bodoni-Book.svg#Bodoni-Book') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Light';
+  src: url('assets/font/CaeciliaLTStd-Light.eot');
+  src: url('assets/font/CaeciliaLTStd-Light.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-Light.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-Light.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-Light.svg#CaeciliaLTStd-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Light';
+  src: url('assets/font/CaeciliaLTStd-LightItalic.eot');
+  src: url('assets/font/CaeciliaLTStd-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-LightItalic.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-LightItalic.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-LightItalic.svg#CaeciliaLTStd-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Light';
+  src: url('assets/font/CaeciliaLTStd-Bold.eot');
+  src: url('assets/font/CaeciliaLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-Bold.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-Bold.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-Bold.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-Bold.svg#CaeciliaLTStd-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Light';
+  src: url('assets/font/CaeciliaLTStd-BoldItalic.eot');
+  src: url('assets/font/CaeciliaLTStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-BoldItalic.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-BoldItalic.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-BoldItalic.svg#CaeciliaLTStd-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Light';
+  src: url('assets/font/CaeciliaLTStd-BoldItalic.eot');
+  src: url('assets/font/CaeciliaLTStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-BoldItalic.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-BoldItalic.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-BoldItalic.svg#CaeciliaLTStd-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Roman';
+  src: url('assets/font/CaeciliaLTStd-Roman.eot');
+  src: url('assets/font/CaeciliaLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-Roman.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-Roman.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-Roman.svg#CaeciliaLTStd-Roman') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Roman';
+  src: url('assets/font/CaeciliaLTStd-Italic.eot');
+  src: url('assets/font/CaeciliaLTStd-Italic.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-Italic.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-Italic.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-Italic.svg#CaeciliaLTStd-Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Roman';
+  src: url('assets/font/CaeciliaLTStd-Heavy.eot');
+  src: url('assets/font/CaeciliaLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-Heavy.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-Heavy.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-Heavy.svg#CaeciliaLTStd-Heavy') format('svg');
+  font-weight: 850;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family:'Caecilia LT Std Roman';
+  src: url('assets/font/CaeciliaLTStd-HeavyItalic.eot');
+  src: url('assets/font/CaeciliaLTStd-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/CaeciliaLTStd-HeavyItalic.woff2') format('woff2'),
+  url('assets/font/CaeciliaLTStd-HeavyItalic.woff') format('woff'),
+  url('assets/font/CaeciliaLTStd-HeavyItalic.svg#CaeciliaLTStd-HeavyItalic') format('svg');
+  font-weight: 850;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+img{
+    max-width: 100%;
+}
+body{
+	overflow-x:hidden;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, main, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	white-space: normal;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*	MAIN CONTAINER
+	Set the width to whatever you want the width of your site to be. */
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after, .row:after, .col:after, .clr:after, .group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* 	DEFAULT ROW STYLES
+	Set bottom padding according to preference */
+.row {
+	padding-bottom: 0em;
+	margin: 0 -10px;
+}
+
+/* DEFAULT COLUMN STYLES */
+.col {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0 10px;
+	margin-bottom:20px;
+}
+
+.slick-slider .item{
+    float: left;
+}
+.slick-slider{
+    overflow: hidden;
+    position: relative;
+}
+.slick-slider:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.slick-slider img{
+    display: block;
+}
+.slick-slider button{
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    margin-top: -15px;
+    z-index: 9;
+}
+.slick-slider button.slick-prev{
+    left: 10px;
+}
+.slick-slider button.slick-next{
+    right: 10px;
+}
+header {
+    padding: 10px 0 0;
+    margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    top: -8px;
+}
+.menu li ul{
+    display: none;
+}
+
+nav#mainMenu ul li {
+    font-size: 14px;
+    display: inline-block;
+}
+nav#mainMenu ul li a{
+    display: block;
+    padding: 10px;
+}
+header .col{
+    margin-bottom: 0;
+}
+nav#mainMenu ul {
+    text-align: right;
+}
+header h1 {
+    font-size: 24px;
+    line-height: 37px;
+}
+.accordian li i {
+    float: right;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+}
+.accordian li {
+    border: 1px solid #e0e0e0;
+    border-bottom: 0;
+}
+.accordianContent, .tabContent {
+    display: none;
+	padding: 0px;
+}
+.accordian li h3 {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.accordian li:last-child{
+    border-bottom: 1px solid #e0e0e0;
+}
+/*
+.tab{
+    position: relative;
+}
+.tab ul li {
+    display: inline-block;
+} */
+.tab ul li span{
+    border-bottom: 0;
+    font-size: 18px;
+}
+.tabContent {
+    left: 0;
+    /*border: 1px solid #e0e0e0; */
+    width: 100%;
+    z-index: 9;
+    margin-top: -1px;
+
+}
+/*.tab ul li.active span {
+    border: 1px solid #000;
+    border-bottom: 0;
+    background: #fff;
+    position: relative;
+    z-index: 91;
+}
+
+.tabContent.active {
+    border: 1px solid;
+}
+.tab ul li span{
+    border-bottom: 0;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+}*/
+ul.socialIcons li {
+    display: inline-block;
+    max-width: 24px;
+    margin-right: 10px;
+}
+
+footer{
+    background: #ebebeb;
+}
+
+footer container{
+    padding: 110px;
+}
+footer h3{
+    font-size: 18px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.copyright {
+    background: #e0e0e0;
+    color: #444;
+    font-size: 12px;
+}
+.copyright p{
+text-align: center;
+}
+.copyright p a{
+    text-decoration: underline;
+}
+
+
+#nav-icon3{
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin:6px 0px 0 0px;
+  /*margin: 6px auto 0;*/
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  float:left;
+  display: none;
+}
+
+#nav-icon3 span{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #282828;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 8px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 16px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.mobile{
+    display: none;
+}
+.mobileMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+    background: #e0e0e0;
+    padding: 20px 0;
+    display: none;
+}
+.mobile ul {
+    padding: 0;
+}
+
+.mobileMenu ul li {
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mobileMenu ul li a {
+    padding: 10px 20px;
+    display: block;
+}
+.wrapper{
+    margin-left: 0;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 99;
+    background: #fff;
+}
+.plusMinus {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.plusMinus:before {
+    float: right;
+    margin-right: 15px;
+    margin-top: 13px;
+}
+.mobileMenu ul li{
+    position: relative;
+}
+.youTubeVideo{
+    position: relative;
+}
+
+.customcoverImage{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+button#pause-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+header.fixed {
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+}
+.wrapper.fixed {
+    padding-top: 78px;
+}
+
+img.main_banner{
+  width: 100%;
+}
+
+.main_banner_top{
+  position: relative;
+}
+
+.only_r_logo{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.our_traditions{
+  position: absolute;
+  top: 66%;
+  left: 25%;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.our_traditions::before{
+  background-image: url(assets/images/our_traditions_before.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 189px;
+  height: 19px;
+  margin-top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.our_traditions::after{
+  background-image: url(assets/images/our_traditions_after.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 189px;
+  height: 19px;
+  bottom: -22px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.our_traditions h1{
+  font-family:'Bodoni Book';
+  font-size: 55px;
+}
+
+.icons{
+  margin-top:6px;
+  float: right;
+}
+
+.icons ul li{
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.header_part {
+  margin-top: 20px;
+}
+
+.manu{
+ float: right;
+ margin-right: -25px;
+
+}
+
+.manu ul li{
+  display: inline-block;
+}
+
+.manu ul li a{
+  font-size: 15px;
+  font-family:'Caecilia LT Std Light';
+  padding: 0 10px;
+  color: #fff;
+}
+.manu ul li:last-child a{
+  padding: 0 5px;
+}
+
+.header_part .row .col {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+.center_middle.row{
+  display: table;
+  width: 100%;
+}
+
+.legacy_section.legacy_bg .container {
+  max-width: 1100px;
+}
+
+.legacy_bg{
+  background: #f7f7f7;
+  margin-top: 55px;
+}
+
+
+img.image_full_size{
+  width: 100%;
+}
+
+.legacy_img span{
+  border: 1px solid #c7b299;
+  padding: 5px 0px 5px 0px;
+  display: block;
+}
+
+.legacy_img img{
+  transform: translate(15px, 2px);
+}
+
+.col.special_margin{
+  margin-top: -25px
+}
+
+.col.margin_right{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.we_believe_in {
+  margin-top: 40px;
+}
+
+.we_believe_in h1 span{
+  font-family:'Caecilia LT Std Roman';
+  font-size: 30px;
+  position: relative;
+}
+
+.we_believe_in h1 span::after{
+  background-image: url(assets/images/icon_line.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 125px;
+  height: 13px;
+  top: 38px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.we_believe_in h3{
+ font-family:'Caecilia LT Std Light';
+ font-size: 23px;
+ line-height: 1.8;
+ margin-top: 40px;
+ color: #212121;
+}
+
+.we_believe_in p{
+ font-family:'Caecilia LT Std Light';
+ font-size: 14px;
+ line-height: 23px;
+ margin-top: 20px;
+ color: #444;
+}
+
+.values_bespoke_margin{
+  margin-top: 75px;
+}
+
+/*   FOOTER CSS   */
+
+.only_r_logo_for_footer {
+  margin-top: 0;
+  margin-left: 50%;
+  transform: translate(0, -50%);
+}
+
+footer{
+  background: url(assets/images/footer-img.jpg);
+  margin-top: 70px;
+  position: relative;
+}
+
+footer::after{
+  background: url(assets/images/only_r_logo.png);
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 60px;
+  background-size: cover;
+  top: -30px;
+  left: calc(50% - 30px);
+}
+
+img.footer_image{
+  width: 100%;
+}
+
+.stay_in_touch h3{
+  font-family:'Caecilia LT Std Light';
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-transform: lowercase;
+  margin-top: 35px;
+}
+
+
+.subscribe_to_our_newsletter {
+  text-align: center;
+  margin-top: 25px;
+}
+
+input[type=text].subscribe{
+  width: 280px;
+  border: 1px solid #c7b299;
+  font-family:'Caecilia LT Std Light';
+  font-size: 14px;
+  color: #fff;
+  padding: 7px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  background: none;
+  letter-spacing: 1px;
+}
+
+input[type=button].button{
+  width: 100px;
+  border: 1px solid #a2a2a2;
+  background: #c7b299;
+  font-family:'Caecilia LT Std Light';
+  font-size: 14px;
+  color: #4e453a;
+  padding: 7px;
+  margin-bottom: 15px;
+  margin-left: -4px;
+  letter-spacing: 1px;
+}
+
+.footer_bar {
+  text-align: center;
+}
+
+.footer_bar ul{
+  text-align: center;
+}
+
+.footer_bar ul li{
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.footer_bar ul li a{
+  font-family:'Caecilia LT Std Light';
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+.footer_icon {
+  text-align: center;
+  position: relative;
+}
+
+.footer_icon ul{
+  text-align: center;
+}
+
+.footer_icon ul li{
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.footer_icon ul li a{
+  text-align: center;
+  padding: 0px 2px;
+}
+
+.footer_icon::after{
+  background: url(assets/images/line.png);
+  content:"";
+  position: absolute;
+  width: 550px;
+  height: 1px;
+  background-size: cover;
+  top: 63px;
+  left: calc(50% - 275px);
+  background-repeat: no-repeat;
+}
+
+.rakyan {
+  margin-top: 25px;
+}
+
+.rakyan ul{
+  text-align: center;
+  padding: 0% 35%;
+}
+
+.rakyan ul li{
+  display: inline-block;
+      padding: 5px 0px;
+}
+
+.rakyan ul li a{
+  font-family:'Caecilia LT Std Light';
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 5px;
+  border-right: 1px solid #fff;
+}
+
+.rakyan ul li:last-child a {
+  border: none;
+}
+
+.di {
+  font-family:'Caecilia LT Std Light';
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/*  Treasure page css  */
+
+
+.treasure{
+  position: absolute;
+  top: 65%;
+  left: 16%;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.treasure::before{
+  background-image: url(assets/images/our_traditions_before.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 189px;
+  height: 19px;
+  margin-top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.treasure::after{
+  background-image: url(assets/images/our_traditions_after.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 189px;
+  height: 19px;
+  bottom: -22px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.treasure h1{
+  font-family:'Bodoni Book';
+  font-size: 55px;
+}
+
+.section_polki {
+  margin-top: 26px;
+}
+
+.polki h2{
+ font-family:'Caecilia LT Std Roman';
+ font-size: 22px;
+ text-align: center;
+ position: relative;
+}
+
+.polki h2::after{
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 18px;
+  height: 2px;
+  top: 25px;
+  left: calc(50% - 9px);
+}
+
+.polki_diamond_jewellery p{
+ font-family:'Caecilia LT Std Light';
+ font-size: 15px;
+ text-align: center;
+ padding-left: 11%;
+ padding-right: 11%;
+ line-height: 26px;
+ margin-top: 30px;
+ color: #444;
+}
+
+.diamond_jewellery ul{
+  text-align: center;
+  margin-top: 40px
+}
+
+.diamond_jewellery ul li{
+  display: inline-block;
+}
+
+.diamond_jewellery ul li a{
+  font-family:'Caecilia LT Std Light';
+ font-size: 15px;
+ padding: 5px 15px;
+ color: #444;
+}
+
+.row.padding_left_right {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 40px;
+}
+
+.halo_beads_bangle h5{
+ font-family:'Caecilia LT Std Roman';
+ font-size: 14px;
+ text-align: center;
+ margin-top: 16px
+}
+
+/*  Rakyan page css  */
+
+.exceptional_jewels{
+  position: absolute;
+  top: 55%;
+  right: 4%;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+span.family_legacy{
+  position: relative;
+}
+
+span.family_legacy::before{
+  background-image: url(assets/images/our_traditions_before.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 189px;
+  height: 19px;
+  margin-top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+span.gold_color::after{
+  background-image: url(assets/images/our_traditions_after.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 189px;
+  height: 19px;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.exceptional_jewels h1{
+  font-family:'Bodoni Book';
+  font-size: 55px;
+}
+
+span.gold_color {
+  display: block;
+  margin-left:105px;
+  color: #c7b299;
+  position: relative;
+}
+
+.legacy_img img{
+  transform: translate(15px, 2px);
+}
+
+.about_us.row{
+  display: table;
+}
+
+.about_us .row .col{
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+.about_us{
+  margin-top:70px;
+}
+
+.col.special_margin{
+  margin-top: -25px
+}
+
+.col.margin_right{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.our_tradition_part_part {
+  margin-top: 50px;
+}
+
+.our_tradition_part h1{
+  font-family:'Caecilia LT Std Roman';
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  margin-top: 35px;
+}
+
+.our_tradition_part h1::after{
+  background-image: url(assets/images/our_traditions_lastpage.png);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 286px;
+  height:29px;
+  top: 38px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.our_tradition_part_part .row .col.span_6:nth-child(1){
+  padding-right: 17px;
+}
+.our_tradition_part_part .row .col.span_6:nth-child(2){
+  padding-left: 17px;
+}
+.our_tradition_legacy img{
+  transform: translate(10px, 2px);
+}
+
+.our_tradition_legacy span {
+  border: 1px solid #c7b299;
+  padding: 5px 0px 5px 0px;
+  display: block;
+}
+
+.our_tradition_legacy{
+  position: relative;
+}
+
+.our_tradition_legacy_read_more h3{
+ font-family:'Caecilia LT Std Light';
+ font-size: 25px;
+ color: #fff;
+ text-align: center;
+ margin-bottom: 35px;
+ position: relative;
+}
+
+.our_tradition_legacy_read_more h3::after{
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  top: 38px;
+  left: calc(50% - 15px);
+}
+
+.our_tradition_legacy_read_more{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.our_tradition_legacy_read_more p{
+  width: 368px;
+  font-family:'Caecilia LT Std Light';
+  font-size: 11px;
+  text-align: center;
+  color: #e4e4e4;
+  line-height: 18px;
+}
+
+.our_tradition_values img{
+  transform: translate(-10px, 2px);
+}
+
+.our_tradition_values span {
+  border: 1px solid #c7b299;
+  padding: 5px 0px 5px 0px;
+  display: block;
+}
+
+.our_tradition_legacy_read_more p a{
+ background: #c7b299;
+ font-family:'Caecilia LT Std Light';
+ font-size: 16px;
+ width: 120px;
+ height: 30px;
+ padding: 6px 0;
+ text-align: center;
+ display: block;
+ margin: 20px auto;
+}
+
+.our_tradition_values{
+  position: relative;
+}
+
+.our_tradition_value h3{
+ font-family:'Caecilia LT Std Light';
+ font-size: 25px;
+ color: #e4e4e4;
+}
+
+.our_tradition_value h3::after{
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  top: 38px;
+  left: calc(50% - 15px);
+}
+
+.our_tradition_value{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.creation_image img{
+  transform: translate(10px, 2px);
+}
+
+.creation_image span {
+  border: 1px solid #c7b299;
+  padding: 5px 0px 5px 0px;
+  display: block;
+}
+
+.creation_image {
+  position: relative;
+}
+
+.exceptional_jewels_creation h5{
+ font-family:'Caecilia LT Std Light';
+ font-size: 25px;
+ color: #e4e4e4;
+}
+
+.exceptional_jewels_creation h5::after{
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  top: 38px;
+  left: calc(50% - 15px);
+}
+
+
+.exceptional_jewels_creation{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.creation_img img{
+  transform: translate(-10px, 2px);
+}
+
+.creation_img span {
+  border: 1px solid #c7b299;
+  padding: 5px 0px 5px 0px;
+  display: block;
+}
+
+.creation_img{
+  position: relative;
+}
+
+.creation_img_read_more h3{
+ font-family:'Caecilia LT Std Light';
+ font-size: 25px;
+ color: #fff;
+ text-align: center;
+ margin-bottom: 35px;
+ position: relative;
+}
+
+.creation_img_read_more h3::after{
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  top: 38px;
+  left: calc(50% - 15px);
+}
+
+.creation_img_read_more{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.creation_img_read_more p{
+  width: 340px;
+  font-family:'Caecilia LT Std Light';
+  font-size: 11px;
+  text-align: center;
+  color: #e4e4e4;
+  line-height: 18px;
+}
+
+.creation_img_read_more p a{
+ background: #c7b299;
+ font-family:'Caecilia LT Std Light';
+ font-size: 16px;
+ width: 110px;
+ height: 30px;
+ padding: 6px 0;
+ text-align: center;
+ display: block;
+ margin: 20px auto;
+}
+
+
+
+@media only screen and (min-width : 768px) {
+.span_1 {
+  width: 8.33333333333%;
+}
+.span_2 {
+  width: 16.6666666667%;
+}
+.span_3 {
+  width: 25%;
+}
+.span_4 {
+  width: 33.3333333333%;
+}
+.span_5 {
+  width: 41.6666666667%;
+}
+.span_6 {
+  width: 50%;
+}
+.span_7 {
+  width: 58.3333333333%;
+}
+.span_8 {
+  width: 66.6666666667%;
+}
+.span_9 {
+  width: 75%;
+}
+.span_10 {
+  width: 83.3333333333%;
+}
+.span_11 {
+  width: 91.6666666667%;
+}
+.span_12 {
+  width: 100%;
+}
+
+}
+
+
+/*first media query 1px less than container width*/
+/*it is for greater than 1023px*/
+@media only screen and (max-width:1159px){
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding:0 20px;
+}
+
+
+
+}
+
+
+/*it is for greater than 768px and less than 1023px*/
+@media only screen and (max-width:1023px){
+div#nav-icon3{
+      display: block;
+  }
+  .mobile{
+      display: block;
+  }
+  .desktop{
+      display: none;
+  }
+  header .col {
+      width: 100%;
+      text-align: center;
+      float: none;
+  }
+  header h1{
+      text-align: center;
+      padding-bottom: 10px;
+  }
+}
+
+/*it is for greater than 568px and less than 767px*/
+@media only screen and (max-width:767px){
+
+  .header_part {
+  margin-top: 0px;
+}
+
+.header_part .row .col {
+  display: inline-block;
+}
+
+.rakyan-logo a img {
+  width: 18%;
+}
+
+.manu ul li a {
+  font-size: 14px;
+  }
+
+
+
+
+/*    treasure css  */
+
+  .diamond_jewellery ul li a {
+      padding: 5px 10px;
+
+  }
+
+  .treasure h1 {
+      font-size: 26px;
+  }
+
+  .treasure {
+      top: 16%;
+      left: 4%;
+  }
+
+  .polki_diamond_jewellery p {
+      padding-left: 0;
+      padding-right:0;
+  }
+
+  .we_believe_in h1{
+      text-align: center;
+  }
+
+  .we_believe_in h1 span {
+      font-size: 24px;
+  }
+
+  .we_believe_in h3 {
+      font-size: 18px;
+      text-align: center;
+      white-space: pre-wrap;
+  }
+
+  .we_believe_in p {
+      font-size: 12px;
+      text-align: center;
+}
+
+/*    RAKYAN  */
+
+  .exceptional_jewels h1 {
+      font-size: 26px;
+}
+
+  .exceptional_jewels {
+      top: 16%;
+      right: 0%;
+  }
+
+  .about_us .row .col {
+  display: inline-block;
+}
+
+  .legacy_img span {
+      margin-top: 50px;
+  }
+
+}

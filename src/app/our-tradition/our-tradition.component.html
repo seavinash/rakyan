@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col span_12">
+        <div class="main_banner_top"> <img class="main_banner" *ngIf="dataList.banner" [src]="dataList.banner">
+            <div class="only_r_logo"> <img src="assets/images/only_r_logo.png"> </div>
+        </div>
+        <div class="our_traditions"> <h1> {{ dataList.banner_text }}  </h1> </div>
+    </div>
+</div>
+<div class="legacy_section legacy_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col span_6 special_margin">
+                <div class="legacy_img">
+                    <span> <img class="image_full_size" *ngIf="dataList.image_legacy" [src]="dataList.image_legacy"> </span>
+                 </div>
+            </div>
+
+            <div class="col span_6 margin_right">
+                <div class="we_believe_in">
+                    <h1> <span> {{ dataList.title_legacy }} </span> </h1>
+                    <h3 [innerHTML]="dataList.tagline_legacy"> </h3>
+                    <div [innerHTML]="dataList.description_legacy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="values_section legacy_bg values_bespoke_margin">
+    <div class="container">
+        <div class="row">
+            <div class="col span_6 margin_right">
+                <div class="we_believe_in">
+                     <h1> <span> {{ dataList.title_values }} </span> </h1>
+                      <h3 [innerHTML]="dataList.tagline_values"> </h3>
+                      <div [innerHTML]="dataList.description_values"></div>
+                  </div>
+            </div>
+
+            <div class="col span_6 special_margin">
+                <div class="legacy_img">
+                    <span> <img class="image_full_size" *ngIf="dataList.image_values" [src]="dataList.image_values"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bespoke_section legacy_bg values_bespoke_margin">
+    <div class="container">
+        <div class="row">
+            <div class="col span_6 special_margin">
+                <div class="legacy_img">
+                    <span> <img class="image_full_size" *ngIf="dataList.image_bespoke" [src]="dataList.image_bespoke"> </span>
+                </div>
+            </div>
+
+            <div class="col span_6 margin_right">
+                <div class="we_believe_in"> <h1> <span> {{ dataList.title_bespoke }} </span> </h1>
+                    <h3 [innerHTML]="dataList.tagline_bespoke"> </h3>
+                    <div [innerHTML]="dataList.description_bespoke"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
